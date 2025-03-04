@@ -131,17 +131,17 @@
 
     .timeline-item {
       position: relative;
-      padding-left: 40px;
+      /* padding-left: 40px; */
       margin-bottom: 40px;
     }
 
     .timeline-item:before {
       content: "";
       position: absolute;
-      left: 0;
-      top: 0;
-      width: 20px;
-      height: 20px;
+      left: -10px;
+      top: 12px;
+      width: 10px;
+      height: 10px;
       background-color: #007bff;
       border-radius: 50%;
       transform: translate(-50%, -50%);
@@ -205,6 +205,14 @@
 
     #chinese_name {
       font-family: "KaiTi", "楷体", "楷体_GB2312";
+    }
+
+    .bibtex-entry {
+      display: none;
+      background: #f8f9fa;
+      padding: 10px;
+      border-left: 3px solid #007bff;
+      font-family: monospace;
     }
   </style>
 </head>
@@ -287,10 +295,15 @@
 
             <h3>News</h3>
             <ul style="height: 200px; overflow: auto">
-              <li>On Feb 28, 2025, I presented our PSMGD work and chaired an oral session at AAAI'25 at Pennsylvania Convention Center, Philadelphia, Pennsylvania.</li>
-              <li>On Feb 11, 2025, our paper "How to Find the Exact Pareto Front for Multi-Objective MDPs?" is selected to be presented as a Spotlight (5.1% of the submitted papers) by ICLR'25.</li>
-              <li>On Jan 22, 2025, three of our papers were accepted by ICLR'25: two focused on diffusion models and one exploring multi-objective MDPs.</li>
-              <li>On Jan 15-16, 2025, I attended the <a href="https://sites.google.com/view/nets-early-career-2025/agenda">NeTS Early Career Workshop 2025</a> at NSF in Alexandria, VA</li>
+              <li>On Feb 28, 2025, I presented our PSMGD work and chaired an oral session at AAAI'25 at Pennsylvania
+                Convention Center, Philadelphia, Pennsylvania.</li>
+              <li>On Feb 11, 2025, our paper "How to Find the Exact Pareto Front for Multi-Objective MDPs?" is selected
+                to be presented as a Spotlight (5.1% of the submitted papers) by ICLR'25.</li>
+              <li>On Jan 22, 2025, three of our papers were accepted by ICLR'25: two focused on diffusion models and one
+                exploring multi-objective MDPs.</li>
+              <li>On Jan 15-16, 2025, I attended the <a
+                  href="https://sites.google.com/view/nets-early-career-2025/agenda">NeTS Early Career Workshop 2025</a>
+                at NSF in Alexandria, VA</li>
               <li>On Dec 9, 2024, our research paper on Fast Multi-Objective Optimization was accepted to AAAI'25.</li>
               <li>I joined the Department of Computer Science of University of Kentucky in August, 2024. <a
                   href="https://engr.uky.edu/news/2024/08/pigman-college-engineering-welcomes-10-new-faculty-members">Photo</a>
@@ -453,6 +466,15 @@
               <em>13<sup>th</sup> International Conference on Learning Representations (ICLR'25)</em>.
               <span class="badge rounded-pill bg-primary">spotlight</span>
               <a href="https://arxiv.org/pdf/2410.15557" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@article{li2024find,
+  title={How to Find the Exact Pareto Front for Multi-Objective MDPs?},
+  author={Li, Yining and Ju, Peizhong and Shroff, Ness B},
+  journal={arXiv preprint arXiv:2410.15557},
+  year={2024}
+}</pre>
+            </li>
             </li>
 
             <li>
@@ -460,6 +482,14 @@
               Diffusion Models and Zero-Shot Conditional Samplers,"
               <em>13<sup>th</sup> International Conference on Learning Representations (ICLR'25)</em>.
               <a href="https://arxiv.org/pdf/2410.13746" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@article{liang2024theory,
+  title={Theory on Score-Mismatched Diffusion Models and Zero-Shot Conditional Samplers},
+  author={Liang, Yuchen and Ju, Peizhong and Liang, Yingbin and Shroff, Ness},
+  journal={arXiv preprint arXiv:2410.13746},
+  year={2024}
+}</pre>
             </li>
 
             <li>
@@ -467,6 +497,15 @@
               Distributions for Accelerated Diffusion Models via a Novel Analysis Approach,"
               <em>13<sup>th</sup> International Conference on Learning Representations (ICLR'25)</em>.
               <a href="https://arxiv.org/pdf/2402.13901" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@article{liang2024broadening,
+  title={Broadening target distributions for accelerated diffusion models via a novel analysis approach},
+  author={Liang, Yuchen and Ju, Peizhong and Liang, Yingbin and Shroff, Ness},
+  journal={arXiv preprint arXiv:2402.13901},
+  year={2024}
+}</pre>
+            </li>
             </li>
 
             <li>
@@ -474,7 +513,16 @@
               Multi-Gradient Descent for Fast Multi-Objective Optimization,"
               <em>39<sup>th</sup> AAAI Conference on Artificial Intelligence (AAAI'25)</em>.
               <a href="https://arxiv.org/pdf/2412.10961" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@article{xu2024psmgd,
+  title={PSMGD: Periodic Stochastic Multi-Gradient Descent for Fast Multi-Objective Optimization},
+  author={Xu, Mingjing and Ju, Peizhong and Liu, Jia and Yang, Haibo},
+  journal={arXiv preprint arXiv:2412.10961},
+  year={2024}
+}</pre>
             </li>
+
             <li>
               <strong>Peizhong Ju</strong>, Haibo Yang, Jia Liu, Yingbin Liang, and Ness B. Shroff,
               "Can We Theoretically Quantify the Impacts of Local Updates on the Generalization Performance of Federated
@@ -482,6 +530,15 @@
                 Design for Mobile Networks and Mobile Computing (MobiHoc'24), 2024
               </em>.
               <a href="https://arxiv.org/pdf/2409.03863" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{ju2024can,
+  title={Can We Theoretically Quantify the Impacts of Local Updates on the Generalization Performance of Federated Learning?},
+  author={Ju, Peizhong and Yang, Haibo and Liu, Jia and Liang, Yingbin and Shroff, Ness},
+  booktitle={Proceedings of the Twenty-fifth International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc'24)},
+  pages={141--150},
+  year={2024}
+}</pre>
             </li>
 
             <li>
@@ -492,6 +549,15 @@
               </em>.
               <a href="https://dl.acm.org/doi/pdf/10.1145/3641512.3686390"
                 class="badge rounded-pill bg-secondary">paper</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{li2024efficient,
+  title={Efficient Multi-dimensional Compression for Network-edge Classification},
+  author={Li, Chengzhang and Ju, Peizhong and Eryilmaz, Atilla and Shroff, Ness},
+  booktitle={Proceedings of the Twenty-fifth International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc'24)},
+  pages={91--100},
+  year={2024}
+}</pre>
             </li>
 
             <li>
@@ -500,6 +566,16 @@
                 International
                 Conference on Learning Representations (ICLR'24), 2024</em>.
               <a href="https://arxiv.org/pdf/2306.00324.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{
+  ju2024achieving,
+  title={Achieving Fairness in Multi-Agent {MDP} Using Reinforcement Learning},
+  author={Peizhong Ju and Arnob Ghosh and Ness Shroff},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024},
+  url={https://openreview.net/forum?id=yoVq2BGQdP}
+}</pre>
             </li>
 
             <li>
@@ -509,69 +585,136 @@
                 International
                 Conference on Learning Representations (ICLR'24), 2024</em>.
               <a href="https://arxiv.org/pdf/2306.12981.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{liachieving,
+  title={Achieving Sample and Computational Efficient Reinforcement Learning by Action Space Reduction via Grouping},
+  author={Li, Yining and Ju, Peizhong and Shroff, Ness},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024},
+  url={https://openreview.net/forum?id=MOmqfJovQ6}
+}</pre>
             </li>
 
             <li>
               Sen Lin, <strong>Peizhong Ju (co-first author)</strong>, Yingbin Liang, and Ness B. Shroff, "Theory
-              on
-              Forgetting and Generalization of Continual Learning," <em>40<sup>th</sup> International
-                Conference on Machine Learning (ICML'23), 2023</em>. <a href="https://arxiv.org/pdf/2302.05836.pdf"
-                class="badge rounded-pill bg-secondary">arXiv version</a>
+              on Forgetting and Generalization of Continual Learning," <em>40<sup>th</sup> International
+                Conference on Machine Learning (ICML'23), 2023</em>.
+              <a href="https://arxiv.org/pdf/2302.05836.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{lin2023theory,
+  title={Theory on forgetting and generalization of continual learning},
+  author={Lin, Sen and Ju, Peizhong and Liang, Yingbin and Shroff, Ness},
+  booktitle={International Conference on Machine Learning},
+  pages={21078--21100},
+  year={2023},
+  organization={PMLR}
+}</pre>
             </li>
 
             <li>
               <strong>Peizhong Ju</strong>, Yingbin Liang, and Ness B. Shroff, "Theoretical Characterization of
-              the
-              Generalization Performance of Overfitted Meta-Learning," <em>11<sup>th</sup>
-                International
-                Conference on Learning Representations (ICLR'23), 2023</em>. <a
-                href="https://arxiv.org/pdf/2304.04312.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              the Generalization Performance of Overfitted Meta-Learning," <em>11<sup>th</sup>
+                International Conference on Learning Representations (ICLR'23), 2023</em>.
+              <a href="https://arxiv.org/pdf/2304.04312.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{jutheoretical,
+  title={Theoretical Characterization of the Generalization Performance of Overfitted Meta-Learning},
+  author={Ju, Peizhong and Liang, Yingbin and Shroff, Ness},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023},
+  url={https://openreview.net/forum?id=Jifob4dSh99}
+}</pre>
             </li>
 
             <li>
               <strong>Peizhong Ju</strong>, Xiaojun Lin, and Ness B. Shroff, "On the Generalization Power of
-              Overfitted
-              Three-Layer Neural Tangent Kernel Model," <em>36<sup>th</sup> Conference on Neural Information
-                Processing Systems (NeurIPS'22), 2022</em>. <a href="https://download.arxiv.org/pdf/2206.02047v1.pdf"
-                class="badge rounded-pill bg-secondary">arXiv version</a>
+              Overfitted Three-Layer Neural Tangent Kernel Model," <em>36<sup>th</sup> Conference on Neural Information
+                Processing Systems (NeurIPS'22), 2022</em>.
+              <a href="https://download.arxiv.org/pdf/2206.02047v1.pdf" class="badge rounded-pill bg-secondary">arXiv
+                version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@article{ju2022generalization,
+  title={On the generalization power of the overfitted three-layer neural tangent kernel model},
+  author={Ju, Peizhong and Lin, Xiaojun and Shroff, Ness},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={26135--26146},
+  year={2022}
+}</pre>
             </li>
 
             <li>
               <strong>Peizhong Ju</strong>, Xiaojun Lin, and Jianwei Huang, "Distribution-Level Markets under High
               Renewable Energy Penetration," <em>Proceedings of the 13<sup>th</sup> ACM International Conference
-                on
-                Future Energy Systems (e-Energy'22), 2022</em>. <span class="badge rounded-pill bg-primary">Best Paper
-                Award</span> <a href="https://dl.acm.org/doi/pdf/10.1145/3538637.3538846"
-                class="badge rounded-pill bg-secondary">open access</a>
+                on Future Energy Systems (e-Energy'22), 2022</em>. <span class="badge rounded-pill bg-primary">Best
+                Paper Award</span>
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3538637.3538846" class="badge rounded-pill bg-secondary">open
+                access</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{ju2022distribution,
+  title={Distribution-level markets under high renewable energy penetration},
+  author={Ju, Peizhong and Lin, Xiaojun and Huang, Jianwei},
+  booktitle={Proceedings of the Thirteenth ACM International Conference on Future Energy Systems},
+  pages={127--156},
+  year={2022}
+}</pre>
             </li>
 
             <li>
               <strong>Peizhong Ju</strong>, Xiaojun Lin, and Ness B. Shroff, "On the Generalization Power of
-              Overfitted
-              Two-Layer Neural Tangent Kernel Models," <em>Proceedings of the 38<sup>th</sup> International
-                Conference
-                on Machine Learning (ICML'21)</em>, PMLR 139:5137-5147, 2021. <a
-                href="https://arxiv.org/pdf/2103.05243.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              Overfitted Two-Layer Neural Tangent Kernel Models," <em>Proceedings of the 38<sup>th</sup> International
+                Conference on Machine Learning (ICML'21)</em>, PMLR 139:5137-5147, 2021.
+              <a href="https://arxiv.org/pdf/2103.05243.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{ju2021generalization,
+  title={On the generalization power of overfitted two-layer neural tangent kernel models},
+  author={Ju, Peizhong and Lin, Xiaojun and Shroff, Ness},
+  booktitle={International Conference on Machine Learning},
+  pages={5137--5147},
+  year={2021},
+  organization={PMLR}
+}</pre>
             </li>
 
             <li>
               <strong>Peizhong Ju</strong>, Xiaojun Lin, and Jia Liu, "Overfitting Can Be Harmless for Basis
-              Pursuit,
-              But Only to a Degree," accepted as spotlight presentation at <em>34<sup>th</sup>
+              Pursuit, But Only to a Degree," accepted as spotlight presentation at <em>34<sup>th</sup>
                 Conference on Neural Information Processing Systems (NeurIPS'20), 2020</em> (acceptance rate: 20%,
-              spotlight
-              presentations: 3%). <span class="badge rounded-pill bg-primary">spotlight</span> <a
-                href="https://arxiv.org/pdf/2002.00492.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              spotlight presentations: 3%). <span class="badge rounded-pill bg-primary">spotlight</span>
+              <a href="https://arxiv.org/pdf/2002.00492.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@article{ju2020overfitting,
+  title={Overfitting can be harmless for basis pursuit, but only to a degree},
+  author={Ju, Peizhong and Lin, Xiaojun and Liu, Jia},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={7956--7967},
+  year={2020}
+}</pre>
             </li>
 
             <li>
               <strong>Peizhong Ju</strong>, and Xiaojun Lin, "Adversarial Attacks to Distributed Voltage Control
-              in
-              Power Distribution Networks with DERs,", <em>Proceedings of the
-                9<sup>th</sup>
+              in Power Distribution Networks with DERs,", <em>Proceedings of the 9<sup>th</sup>
                 International Conference on Future Energy Systems (e-Energy'18)</em>, pp. 291-302, Karlsruhe, Germany,
-              June
-              12-15, 2018. <span class="badge rounded-pill bg-primary">Best Paper Award Finalist</span>
+              June 12-15, 2018. <span class="badge rounded-pill bg-primary">Best Paper Award Finalist</span>
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3208903.3208912" class="badge rounded-pill bg-secondary">paper</a>
+              <button class="badge rounded-pill bg-secondary border-0 toggle-bibtex">BibTeX</button>
+              <pre class="bibtex-entry">
+@inproceedings{ju2018adversarial,
+  title={Adversarial attacks to distributed voltage control in power distribution networks with DERs},
+  author={Ju, Peizhong and Lin, Xiaojun},
+  booktitle={Proceedings of the Ninth International Conference on Future Energy Systems},
+  pages={291--302},
+  year={2018}
+}</pre>
             </li>
 
             <li><strong>Peizhong Ju</strong>, Meng Zhang, Xiang Cheng, and Liuqing Yang, "Generalized spatial
@@ -691,6 +834,13 @@
       <hr>
       <div>
         <ul>
+          <li><strong>Keeping Current (KCS) talks</strong><br>
+            Organizer: Department of Computer Science, University of Kentucky<br>
+            Location: Lexington, KY<br>
+            Date: Feb 26, 2025<br>
+            Title: "Advancements in Multi-Objective Optimization: Exact Pareto Fronts in MDPs and Efficient Gradient
+            Descent Methods"
+          </li>
 
           <li><strong>UK Applied Math Seminar</strong><br>
             Organizer: Department of Mathematics, University of Kentucky<br>
@@ -825,6 +975,15 @@
                 <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"></path>
               </svg> Copy`;
         }, 2000);
+      });
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll('.toggle-bibtex').forEach(button => {
+      button.addEventListener('click', function () {
+        let bibtex = this.closest('li').querySelector('.bibtex-entry');
+        bibtex.style.display = (bibtex.style.display === 'none' || bibtex.style.display === '') ? 'block' : 'none';
       });
     });
   </script>
