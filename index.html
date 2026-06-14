@@ -27,6 +27,19 @@
       background-color: var(--background-color);
     }
 
+    #neural-background {
+      inset: 0;
+      opacity: 0.38;
+      pointer-events: none;
+      position: fixed;
+      z-index: 0;
+    }
+
+    body > * {
+      position: relative;
+      z-index: 1;
+    }
+
     .not-nav {
       font-family: "Arial", sans-serif;
       color: #333;
@@ -41,7 +54,7 @@
       left: 0;
       bottom: 0;
       width: 150px;
-      background-color: #f8f9fa;
+      background-color: rgba(248, 249, 250, 0.92);
       overflow-y: auto;
       z-index: 1;
       border-right: 1px solid #dee2e6;
@@ -120,7 +133,7 @@
     }
 
     section {
-      background-color: #f8f9fa;
+      background-color: rgba(248, 249, 250, 0.82);
       padding: 40px 0;
     }
 
@@ -213,6 +226,12 @@
       padding: 10px;
       border-left: 3px solid #007bff;
       font-family: monospace;
+    }
+
+    @media print {
+      #neural-background {
+        display: none !important;
+      }
     }
   </style>
 </head>
@@ -1224,6 +1243,8 @@
       });
     });
   </script>
+
+  <script src="assets/neural-background.js"></script>
 
 </body>
 
