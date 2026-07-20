@@ -196,6 +196,90 @@
       /* Maintains aspect ratio */
     }
 
+    .research-areas {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin: 0 0 42px;
+    }
+
+    h3.research-subsection-title {
+      border-left: 4px solid var(--primary-color);
+      color: #1d3e6f;
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin: 0 0 24px;
+      padding-left: 12px;
+    }
+
+    .research-area-card {
+      align-items: center;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(29, 62, 111, 0.12);
+      border-radius: 20px;
+      box-shadow: 0 10px 28px rgba(29, 62, 111, 0.08);
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: 18px 14px 20px;
+      text-align: center;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .research-area-card:hover {
+      box-shadow: 0 14px 34px rgba(29, 62, 111, 0.14);
+      transform: translateY(-4px);
+    }
+
+    .research-area-icon {
+      height: 126px;
+      margin-bottom: 8px;
+      object-fit: contain;
+      width: 126px;
+    }
+
+    .research-area-card h3 {
+      color: #1d3e6f;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    .research-area-card p {
+      color: #5f6b7a;
+      font-size: 0.86rem;
+      font-weight: 400;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    @media (max-width: 992px) {
+      .research-areas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 520px) {
+      .research-areas {
+        grid-template-columns: 1fr;
+      }
+
+      .research-area-card {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .research-area-card {
+        transition: none;
+      }
+
+      .research-area-card:hover {
+        transform: none;
+      }
+    }
+
     h2.section-title {
       font-size: 36px;
       font-weight: 700;
@@ -459,6 +543,30 @@
     <section id="research">
       <h2 class="section-title">Research</h2>
       <hr>
+      <h3 class="research-subsection-title">Research Areas</h3>
+      <div class="research-areas" aria-label="Research areas">
+        <article class="research-area-card">
+          <img class="research-area-icon" src="assets/research-icons/machine-learning.png" alt="">
+          <h3>Machine Learning Theory</h3>
+          <p>Understanding learning, generalization, and model behavior.</p>
+        </article>
+        <article class="research-area-card">
+          <img class="research-area-icon" src="assets/research-icons/optimization.png" alt="">
+          <h3>Optimization</h3>
+          <p>Finding efficient solutions under competing objectives.</p>
+        </article>
+        <article class="research-area-card">
+          <img class="research-area-icon" src="assets/research-icons/smart-grids.png" alt="">
+          <h3>Smart Grids</h3>
+          <p>Building resilient energy systems with renewable resources.</p>
+        </article>
+        <article class="research-area-card">
+          <img class="research-area-icon" src="assets/research-icons/wireless-communication.png" alt="">
+          <h3>Wireless Communication</h3>
+          <p>Studying reliable connections and efficient information flow.</p>
+        </article>
+      </div>
+      <h3 class="research-subsection-title">Previous Research Experience</h3>
       <ul>
         <li>
           <strong>Postdoctoral Scholar, the Ohio State University</strong><br>
