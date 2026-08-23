@@ -21,8 +21,8 @@
     z-index below content, and set the page content above it.
   - The script exits early on Reveal.js slide pages by checking ".reveal".
     Remove that guard if the effect should appear everywhere.
-  - Respects prefers-reduced-motion: reduced-motion users get a static draw
-    instead of requestAnimationFrame animation.
+  - Respects prefers-reduced-motion by slowing the animation instead of
+    freezing it completely.
   - Caps devicePixelRatio at 2 to avoid excessive canvas work on high-DPI screens.
   - Normal edge drawing is optimized per cluster, so it does not compare every
     node against every other node globally.
@@ -74,6 +74,7 @@
   var height = 0;
   var pixelRatio = 1;
   var lastTime = 0;
+  var animationTime = 0;
   var lifecycleTimer = 0;
   var currentTimeSeconds = 0;
   var nextClusterId = 0;
@@ -574,31 +575,22 @@
   }
 
   function animate(time) {
-    if (!lastTime || time - lastTime > 16) {
-      var delta = lastTime ? Math.min((time - lastTime) / 1000, 0.06) : 0;
-      draw(time, delta);
-      lastTime = time;
-    }
+    var delta = lastTime ? Math.min((time - lastTime) / 1000, 0.06) : 0;
+    var motionScale = prefersReducedMotion.matches ? 0.45 : 1;
+
+    animationTime += delta * motionScale;
+    draw(animationTime * 1000, delta * motionScale);
+    lastTime = time;
 
     frameId = window.requestAnimationFrame(animate);
   }
 
   function start() {
-    if (frameId || prefersReducedMotion.matches) {
-      draw(0, 0);
+    if (frameId) {
       return;
     }
 
     frameId = window.requestAnimationFrame(animate);
-  }
-
-  function stop() {
-    if (frameId) {
-      window.cancelAnimationFrame(frameId);
-      frameId = null;
-    }
-
-    draw(0, 0);
   }
 
   function rebuild() {
@@ -608,13 +600,17 @@
   }
 
   window.addEventListener("resize", rebuild);
-  prefersReducedMotion.addEventListener("change", function () {
-    if (prefersReducedMotion.matches) {
-      stop();
-    } else {
-      start();
-    }
-  });
+
+  function handleMotionPreferenceChange() {
+    lastTime = 0;
+    start();
+  }
+
+  if (typeof prefersReducedMotion.addEventListener === "function") {
+    prefersReducedMotion.addEventListener("change", handleMotionPreferenceChange);
+  } else {
+    prefersReducedMotion.addListener(handleMotionPreferenceChange);
+  }
 
   rebuild();
 }());
