@@ -22,7 +22,9 @@
   - The script exits early on Reveal.js slide pages by checking ".reveal".
     Remove that guard if the effect should appear everywhere.
   - Respects prefers-reduced-motion by slowing the animation instead of
-    freezing it completely.
+    freezing it completely, and caps rendering at 20 FPS in that mode.
+  - Caps normal rendering at 60 FPS so high-refresh displays do not perform
+    unnecessary canvas redraws.
   - Caps devicePixelRatio at 2 to avoid excessive canvas work on high-DPI screens.
   - Normal edge drawing is optimized per cluster, so it does not compare every
     node against every other node globally.
@@ -73,7 +75,9 @@
   var width = 0;
   var height = 0;
   var pixelRatio = 1;
-  var lastTime = 0;
+  var lastFrameTime = null;
+  var lastDrawTime = null;
+  var frameAccumulator = 0;
   var animationTime = 0;
   var lifecycleTimer = 0;
   var currentTimeSeconds = 0;
@@ -575,12 +579,27 @@
   }
 
   function animate(time) {
-    var delta = lastTime ? Math.min((time - lastTime) / 1000, 0.06) : 0;
-    var motionScale = prefersReducedMotion.matches ? 0.45 : 1;
+    var targetFrameRate = prefersReducedMotion.matches ? 20 : 60;
+    var frameInterval = 1000 / targetFrameRate;
 
-    animationTime += delta * motionScale;
-    draw(animationTime * 1000, delta * motionScale);
-    lastTime = time;
+    if (lastFrameTime === null) {
+      lastFrameTime = time;
+      lastDrawTime = time;
+      draw(animationTime * 1000, 0);
+    } else {
+      frameAccumulator += Math.min(time - lastFrameTime, 60);
+      lastFrameTime = time;
+
+      if (frameAccumulator + 0.25 >= frameInterval) {
+        var delta = Math.min((time - lastDrawTime) / 1000, 0.06);
+        var motionScale = prefersReducedMotion.matches ? 0.45 : 1;
+
+        frameAccumulator = frameAccumulator >= frameInterval ? frameAccumulator % frameInterval : 0;
+        animationTime += delta * motionScale;
+        draw(animationTime * 1000, delta * motionScale);
+        lastDrawTime = time;
+      }
+    }
 
     frameId = window.requestAnimationFrame(animate);
   }
@@ -596,13 +615,18 @@
   function rebuild() {
     resetCanvas();
     createNodes();
+    lastFrameTime = null;
+    lastDrawTime = null;
+    frameAccumulator = 0;
     start();
   }
 
   window.addEventListener("resize", rebuild);
 
   function handleMotionPreferenceChange() {
-    lastTime = 0;
+    lastFrameTime = null;
+    lastDrawTime = null;
+    frameAccumulator = 0;
     start();
   }
 
