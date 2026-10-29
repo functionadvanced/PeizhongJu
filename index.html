@@ -199,8 +199,16 @@
     .research-areas {
       display: grid;
       gap: 18px;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
       margin: 0 0 42px;
+    }
+
+    .research-areas-machine-learning {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      margin-bottom: 48px;
+    }
+
+    .research-areas-other {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     h3.research-subsection-title {
@@ -251,6 +259,12 @@
       font-weight: 400;
       line-height: 1.45;
       margin: 0;
+    }
+
+    @media (max-width: 1199px) {
+      .research-areas-machine-learning {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 992px) {
@@ -553,13 +567,36 @@
     <section id="research">
       <h2 class="section-title">Research</h2>
       <hr>
-      <h3 class="research-subsection-title">Research Areas</h3>
-      <div class="research-areas" aria-label="Research areas">
+      <h3 class="research-subsection-title">Machine Learning</h3>
+      <div class="research-areas research-areas-machine-learning" aria-label="Machine learning research areas">
         <article class="research-area-card">
-          <img class="research-area-icon" src="assets/research-icons/machine-learning.png" alt="">
-          <h3>Machine Learning Theory</h3>
-          <p>Understanding learning, generalization, and model behavior.</p>
+          <img class="research-area-icon" src="assets/research-icons/ml-reinforcement-learning.png" alt="">
+          <h3>Reinforcement Learning</h3>
+          <p>Offline RL, multi-agent RL, multi-objective MDPs, and efficient exploration.</p>
         </article>
+        <article class="research-area-card">
+          <img class="research-area-icon" src="assets/research-icons/ml-federated-learning.png" alt="">
+          <h3>Federated Learning</h3>
+          <p>Federated and split learning, local updates, and distributed training.</p>
+        </article>
+        <article class="research-area-card">
+          <img class="research-area-icon" src="assets/research-icons/ml-continual-transfer-learning.png" alt="">
+          <h3>Continual &amp; Transfer Learning</h3>
+          <p>Forgetting, rehearsal, source selection, and knowledge transfer.</p>
+        </article>
+        <article class="research-area-card">
+          <img class="research-area-icon" src="assets/research-icons/ml-diffusion-flow-matching.png" alt="">
+          <h3>Diffusion &amp; Flow Matching</h3>
+          <p>Generative modeling, conditional sampling, and flow-based learning.</p>
+        </article>
+        <article class="research-area-card">
+          <img class="research-area-icon" src="assets/research-icons/ml-interpretability-generalization.png" alt="">
+          <h3>Interpretability &amp; Generalization</h3>
+          <p>Neuronal attribution, sparse representations, and the theory of overfitting.</p>
+        </article>
+      </div>
+      <h3 class="research-subsection-title">Other Research Areas</h3>
+      <div class="research-areas research-areas-other" aria-label="Other research areas">
         <article class="research-area-card">
           <img class="research-area-icon" src="assets/research-icons/optimization.png" alt="">
           <h3>Optimization</h3>
