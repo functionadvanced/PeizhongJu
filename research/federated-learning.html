@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Federated learning lets multiple devices or organizations train a shared model while keeping their raw training data local. Each participant performs local computation and exchanges model information with a coordinating server, making communication and data differences central challenges. My research examines how local updates affect generalization and how federated split learning can train more efficiently.">
+  <title>Federated Learning | Peizhong Ju</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/research-topic.css">
+</head>
+<body class="topic-page">
+  <nav class="nav flex-column" aria-label="Main navigation">
+    <div class="navbar-brand mb-3 not-nav">
+      <div class="text-center">
+        <span class="ms-2" id="pinyin_name">Peizhong Ju</span><br>
+        <span class="ms-2" id="chinese_name">鞠培中</span>
+      </div>
+    </div>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#honors">Academic Honors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="../index.html#research">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#talks">Invited Talks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#teaching">Teaching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section id="overview" class="topic-overview" aria-labelledby="topic-title">
+      <div class="topic-breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#research">Machine Learning</a></div>
+      <h1 id="topic-title" class="section-title">Federated Learning</h1>
+      <hr>
+      <p class="topic-intro">Federated learning lets multiple devices or organizations train a shared model while keeping their raw training data local. Each participant performs local computation and exchanges model information with a coordinating server, making communication and data differences central challenges. My research examines how local updates affect generalization and how federated split learning can train more efficiently.</p>
+    </section>
+    <section id="system" aria-labelledby="system-title">
+      <h2 id="system-title" class="research-subsection-title">System Diagram</h2>
+      <figure class="topic-diagram">
+        <img src="../assets/research-diagrams/federated-learning.svg" alt="Federated learning system with local client data, local training, model update aggregation, and redistribution of a shared model.">
+        <figcaption>Clients train on their own data and exchange model updates with a coordinator. Repeated aggregation and redistribution improve a shared model while raw data remain at each client.</figcaption>
+      </figure>
+    </section>
+    <section id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title" class="research-subsection-title">My publications on this area</h2>
+      <div class="timeline-item">
+        <h3 class="timeline-title">Peer-Reviewed Conference Papers</h3>
+        <ol class="publication-list">
+<li>
+              Srijith Nair, Michael Lin, <strong>Peizhong Ju</strong>, Amirreza Talebi, Elizabeth Serena Bentley, and
+              Jia Liu,
+              "FSL-SAGE: Accelerating Federated Split Learning via Smashed Activation Gradient Estimation,"
+              <em>42<sup>nd</sup> International Conference on Machine Learning (ICML'25)</em>.
+              <a href="https://arxiv.org/pdf/2505.23182" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-nair2025fsl">BibTeX</button>
+              <span class="badge bg-transparent border border-primary text-primary">ICML</span>
+              <pre class="bibtex-entry" id="bibtex-nair2025fsl">
+@inproceedings{nair2025fsl,
+  title={FSL-SAGE: Accelerating Federated Split Learning via Smashed Activation Gradient Estimation},
+  author={Nair, Srijith and Lin, Michael and Ju, Peizhong and Talebi, Amirreza and Bentley, Elizabeth and Liu, Jia},
+  booktitle={International Conference on Machine Learning},
+  year={2025},
+  organization={PMLR}
+}
+</pre>
+            </li>
+<li>
+              <strong>Peizhong Ju</strong>, Haibo Yang, Jia Liu, Yingbin Liang, and Ness B. Shroff,
+              "Can We Theoretically Quantify the Impacts of Local Updates on the Generalization Performance of Federated
+              Learning?" <em>25<sup>th</sup> International Symposium on Theory, Algorithmic Foundations, and Protocol
+                Design for Mobile Networks and Mobile Computing (MobiHoc'24), 2024
+              </em>.
+              <a href="https://arxiv.org/pdf/2409.03863" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-ju2024can">BibTeX</button>
+              <pre class="bibtex-entry" id="bibtex-ju2024can">
+@inproceedings{ju2024can,
+  title={Can We Theoretically Quantify the Impacts of Local Updates on the Generalization Performance of Federated Learning?},
+  author={Ju, Peizhong and Yang, Haibo and Liu, Jia and Liang, Yingbin and Shroff, Ness},
+  booktitle={Proceedings of the Twenty-fifth International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc'24)},
+  pages={141--150},
+  year={2024}
+}</pre>
+            </li>
+        </ol>
+      </div>
+      <div class="topic-explore">
+        <h3>Explore Machine Learning</h3>
+        <ul class="topic-links">
+          <li><a href="reinforcement-learning.html">Reinforcement Learning</a></li><li><span aria-current="page">Federated Learning</span></li><li><a href="continual-transfer-learning.html">Continual &amp; Transfer Learning</a></li><li><a href="diffusion-flow-matching.html">Diffusion &amp; Flow Matching</a></li><li><a href="interpretability-generalization.html">Interpretability &amp; Generalization</a></li>
+        </ul>
+        <a href="../index.html#research">← Back to all research topics</a>
+      </div>
+    </section>
+  </main>
+  <script src="../assets/research-topic.js"></script>
+  <script src="../assets/neural-background.js"></script>
+</body>
+</html>

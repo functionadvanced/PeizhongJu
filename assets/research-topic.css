@@ -1,0 +1,154 @@
+/* Topic pages share the homepage's typography, sidebar, colors, and background. */
+.topic-page .topic-overview {
+  padding-bottom: 24px;
+}
+
+.topic-breadcrumb {
+  color: #5f6b7a;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+.topic-page h1.section-title {
+  color: #1d3e6f;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.topic-intro {
+  color: #343a40;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.topic-page a:focus-visible,
+.topic-page button:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 4px;
+}
+
+.topic-page #system {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.topic-diagram {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(29, 62, 111, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(29, 62, 111, 0.08);
+  margin: 0;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.topic-diagram img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.topic-diagram figcaption {
+  color: #5f6b7a;
+  font-size: 0.93rem;
+  line-height: 1.65;
+  margin-top: 20px;
+}
+
+.topic-page #publications {
+  padding-top: 24px;
+}
+
+.topic-page .publication-list {
+  padding-left: 26px;
+}
+
+.topic-page .publication-list > li {
+  line-height: 1.75;
+  margin-bottom: 22px;
+  padding-left: 4px;
+}
+
+.topic-page .publication-list .badge {
+  white-space: normal;
+}
+
+.topic-page .bibtex-entry {
+  font-size: 0.83rem;
+  line-height: 1.6;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.topic-explore {
+  border-top: 1px solid #dee2e6;
+  margin-top: 32px;
+  padding-top: 24px;
+}
+
+.topic-explore h3 {
+  color: #1d3e6f;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.topic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 18px 0 24px;
+  padding: 0;
+}
+
+.topic-links a,
+.topic-links [aria-current="page"] {
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(29, 62, 111, 0.16);
+  border-radius: 12px;
+  display: block;
+  font-size: 0.88rem;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+.topic-links a:hover {
+  border-color: var(--primary-color);
+}
+
+.topic-links [aria-current="page"] {
+  background: #1d3e6f;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .topic-page h1.section-title {
+    font-size: 30px;
+    overflow-wrap: anywhere;
+  }
+
+  .topic-page section {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .topic-diagram {
+    border-radius: 14px;
+    padding: 12px;
+  }
+}
+
+@media print {
+  .topic-page nav,
+  .topic-explore {
+    display: none !important;
+  }
+
+  .topic-page section {
+    margin-left: 0;
+  }
+}

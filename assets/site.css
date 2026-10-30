@@ -1,0 +1,338 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+#neural-background {
+  inset: 0;
+  opacity: 0.38;
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.not-nav {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* add any other styles you want */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  background-color: rgba(248, 249, 250, 0.92);
+  overflow-y: auto;
+  z-index: 1;
+  border-right: 1px solid #dee2e6;
+  /* Add a border to the right side */
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none !important;
+  }
+
+  section {
+    margin-left: 0px !important;
+  }
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--secondary-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+
+
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+
+
+section {
+  margin-left: 200px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fa {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+
+.headshot {
+  width: 200px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  /* border-radius: 50%; */
+  margin: 20px auto;
+  display: block;
+}
+
+section {
+  background-color: rgba(248, 249, 250, 0.82);
+  padding: 40px 0;
+}
+
+.timeline {
+  position: relative;
+  /* margin-top: 40px; */
+}
+
+.timeline-item {
+  position: relative;
+  /* padding-left: 40px; */
+  margin-bottom: 40px;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-title {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.timeline-info {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.timeline-info span {
+  display: block;
+}
+
+.timeline-info span:last-child {
+  margin-bottom: 0;
+}
+
+.university-logo {
+  display: block;
+  /* Ensures the logo appears on a new line */
+  margin-top: 10px;
+  /* Adjust as needed */
+  /* Additional styling for the logo */
+}
+
+.university-logo img {
+  height: 50px;
+  /* Adjust the width as needed */
+  width: auto;
+  /* Maintains aspect ratio */
+}
+
+.research-areas {
+  display: grid;
+  gap: 18px;
+  margin: 0 0 42px;
+}
+
+.research-areas-machine-learning {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 48px;
+}
+
+.research-areas-other {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.research-subsection-title {
+  border-left: 4px solid var(--primary-color);
+  color: #1d3e6f;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+  padding-left: 12px;
+}
+
+.research-area-card {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(29, 62, 111, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(29, 62, 111, 0.08);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 18px 14px 20px;
+  text-align: center;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.research-area-card:hover {
+  box-shadow: 0 14px 34px rgba(29, 62, 111, 0.14);
+  transform: translateY(-4px);
+}
+
+.research-area-icon {
+  height: 126px;
+  margin-bottom: 8px;
+  object-fit: contain;
+  width: 126px;
+}
+
+.research-area-card h3 {
+  color: #1d3e6f;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.research-area-card p {
+  color: #5f6b7a;
+  font-size: 0.86rem;
+  font-weight: 400;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 1199px) {
+  .research-areas-machine-learning {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .research-areas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .research-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .research-area-card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-area-card {
+    transition: none;
+  }
+
+  .research-area-card:hover {
+    transform: none;
+  }
+}
+
+h2.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1d3e6f;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+hr {
+  border-top: 2px solid #007bff;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+#pinyin_name {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#chinese_name {
+  font-family: "KaiTi", "楷体", "楷体_GB2312";
+}
+
+.bibtex-entry {
+  display: none;
+  background: #f8f9fa;
+  padding: 10px;
+  border-left: 3px solid #007bff;
+  font-family: monospace;
+}
+
+@media print {
+  #neural-background {
+    display: none !important;
+  }
+}
+
+/* Topic cards are ordinary links so browsers support keyboard and new-tab navigation. */
+a.research-area-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.research-area-card:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 4px;
+}
+
+.research-area-action {
+  color: #0066d4;
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: auto;
+  padding-top: 14px;
+}

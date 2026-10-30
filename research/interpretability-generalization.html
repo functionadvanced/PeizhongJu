@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interpretability asks what a model has learned and how its internal features shape its predictions. Generalization asks how well those predictions extend to data the model has not seen during training, including settings where the model fits its training data exactly. My work connects these questions through studies of neural representations, overfitting, neural tangent kernel models, and the generalization of federated, continual, transfer, and meta-learning.">
+  <title>Interpretability &amp; Generalization | Peizhong Ju</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/research-topic.css">
+</head>
+<body class="topic-page">
+  <nav class="nav flex-column" aria-label="Main navigation">
+    <div class="navbar-brand mb-3 not-nav">
+      <div class="text-center">
+        <span class="ms-2" id="pinyin_name">Peizhong Ju</span><br>
+        <span class="ms-2" id="chinese_name">鞠培中</span>
+      </div>
+    </div>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#honors">Academic Honors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="../index.html#research">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#talks">Invited Talks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#teaching">Teaching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section id="overview" class="topic-overview" aria-labelledby="topic-title">
+      <div class="topic-breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#research">Machine Learning</a></div>
+      <h1 id="topic-title" class="section-title">Interpretability &amp; Generalization</h1>
+      <hr>
+      <p class="topic-intro">Interpretability asks what a model has learned and how its internal features shape its predictions. Generalization asks how well those predictions extend to data the model has not seen during training, including settings where the model fits its training data exactly. My work connects these questions through studies of neural representations, overfitting, neural tangent kernel models, and the generalization of federated, continual, transfer, and meta-learning.</p>
+    </section>
+    <section id="system" aria-labelledby="system-title">
+      <h2 id="system-title" class="research-subsection-title">System Diagram</h2>
+      <figure class="topic-diagram">
+        <img src="../assets/research-diagrams/interpretability-generalization.svg" alt="A trained model connects internal features and explanations with evaluation on held-out data to study interpretability and generalization.">
+        <figcaption>Interpretability connects model predictions to internal features and neuron behavior. Generalization examines performance on unseen data and the effects of model capacity and training choices.</figcaption>
+      </figure>
+    </section>
+    <section id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title" class="research-subsection-title">My publications on this area</h2>
+      <div class="timeline-item">
+        <h3 class="timeline-title">Peer-Reviewed Conference Papers</h3>
+        <ol class="publication-list">
+<li>
+              Moghis Fereidouni, Muhammad Umair Haider, <strong>Peizhong Ju</strong>, and A.B. Siddique, "Evaluating
+              Sparse Autoencoders for Monosemantic Representation,"
+              Findings of <em>19<sup>th</sup> Conference of the European
+                Chapter of the Association for Computational Linguistics (EACL'26), 2026</em>
+              <a href="https://arxiv.org/pdf/2508.15094" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-fereidouni2025evaluating">BibTeX</button>
+              <pre class="bibtex-entry" id="bibtex-fereidouni2025evaluating">
+@article{fereidouni2025evaluating,
+  title={Evaluating Sparse Autoencoders for Monosemantic Representation},
+  author={Fereidouni, Moghis and Haider, Muhammad Umair and Ju, Peizhong and Siddique, AB},
+  journal={arXiv preprint arXiv:2508.15094},
+  year={2025}
+}
+</pre>
+            </li>
+<li>
+              Junze Deng, Qinhang Wu, <strong>Peizhong Ju</strong>, Sen Lin, Yingbin Liang, and Ness Shroff,
+              "Unlocking the Power of Rehearsal in Continual Learning: A Theoretical Perspective,"
+              <em>42<sup>nd</sup> International Conference on Machine Learning (ICML'25)</em>.
+              <a href="https://arxiv.org/pdf/2506.00205" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-deng2025unlocking">BibTeX</button>
+              <span class="badge bg-transparent border border-primary text-primary">ICML</span>
+              <pre class="bibtex-entry" id="bibtex-deng2025unlocking">
+@inproceedings{deng2025unlocking,
+  title={Unlocking the Power of Rehearsal in Continual Learning: A Theoretical Perspective},
+  author={Deng, Junze and Wu, Qinhang and Ju, Peizhong and Lin, Sen and Liang, Yingbin and Shroff, Ness},
+  booktitle={International Conference on Machine Learning},
+  year={2025},
+  organization={PMLR}
+}
+</pre>
+            </li>
+<li>
+              <strong>Peizhong Ju</strong>, Haibo Yang, Jia Liu, Yingbin Liang, and Ness B. Shroff,
+              "Can We Theoretically Quantify the Impacts of Local Updates on the Generalization Performance of Federated
+              Learning?" <em>25<sup>th</sup> International Symposium on Theory, Algorithmic Foundations, and Protocol
+                Design for Mobile Networks and Mobile Computing (MobiHoc'24), 2024
+              </em>.
+              <a href="https://arxiv.org/pdf/2409.03863" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-ju2024can">BibTeX</button>
+              <pre class="bibtex-entry" id="bibtex-ju2024can">
+@inproceedings{ju2024can,
+  title={Can We Theoretically Quantify the Impacts of Local Updates on the Generalization Performance of Federated Learning?},
+  author={Ju, Peizhong and Yang, Haibo and Liu, Jia and Liang, Yingbin and Shroff, Ness},
+  booktitle={Proceedings of the Twenty-fifth International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc'24)},
+  pages={141--150},
+  year={2024}
+}</pre>
+            </li>
+<li>
+              Sen Lin, <strong>Peizhong Ju (co-first author)</strong>, Yingbin Liang, and Ness B. Shroff, "Theory
+              on Forgetting and Generalization of Continual Learning," <em>40<sup>th</sup> International
+                Conference on Machine Learning (ICML'23), 2023</em>.
+              <a href="https://arxiv.org/pdf/2302.05836.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-lin2023theory">BibTeX</button>
+              <span class="badge bg-transparent border border-primary text-primary">ICML</span>
+              <pre class="bibtex-entry" id="bibtex-lin2023theory">
+@inproceedings{lin2023theory,
+  title={Theory on forgetting and generalization of continual learning},
+  author={Lin, Sen and Ju, Peizhong and Liang, Yingbin and Shroff, Ness},
+  booktitle={International Conference on Machine Learning},
+  pages={21078--21100},
+  year={2023},
+  organization={PMLR}
+}</pre>
+            </li>
+<li>
+              <strong>Peizhong Ju</strong>, Yingbin Liang, and Ness B. Shroff, "Theoretical Characterization of
+              the Generalization Performance of Overfitted Meta-Learning," <em>11<sup>th</sup>
+                International Conference on Learning Representations (ICLR'23), 2023</em>.
+              <a href="https://arxiv.org/pdf/2304.04312.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-jutheoretical">BibTeX</button>
+              <span class="badge bg-transparent border border-success text-success">ICLR</span>
+              <pre class="bibtex-entry" id="bibtex-jutheoretical">
+@inproceedings{jutheoretical,
+  title={Theoretical Characterization of the Generalization Performance of Overfitted Meta-Learning},
+  author={Ju, Peizhong and Liang, Yingbin and Shroff, Ness},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023},
+  url={https://openreview.net/forum?id=Jifob4dSh99}
+}</pre>
+            </li>
+<li>
+              <strong>Peizhong Ju</strong>, Xiaojun Lin, and Ness B. Shroff, "On the Generalization Power of
+              Overfitted Three-Layer Neural Tangent Kernel Model," <em>36<sup>th</sup> Conference on Neural Information
+                Processing Systems (NeurIPS'22), 2022</em>.
+              <a href="https://download.arxiv.org/pdf/2206.02047v1.pdf" class="badge rounded-pill bg-secondary">arXiv
+                version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-ju2022generalization">BibTeX</button>
+              <span class="badge bg-transparent border border-danger text-danger">NeurIPS</span>
+              <pre class="bibtex-entry" id="bibtex-ju2022generalization">
+@article{ju2022generalization,
+  title={On the generalization power of the overfitted three-layer neural tangent kernel model},
+  author={Ju, Peizhong and Lin, Xiaojun and Shroff, Ness},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={26135--26146},
+  year={2022}
+}</pre>
+            </li>
+<li>
+              <strong>Peizhong Ju</strong>, Xiaojun Lin, and Ness B. Shroff, "On the Generalization Power of
+              Overfitted Two-Layer Neural Tangent Kernel Models," <em>Proceedings of the 38<sup>th</sup> International
+                Conference on Machine Learning (ICML'21)</em>, PMLR 139:5137-5147, 2021.
+              <a href="https://arxiv.org/pdf/2103.05243.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-ju2021generalization">BibTeX</button>
+              <span class="badge bg-transparent border border-primary text-primary">ICML</span>
+              <pre class="bibtex-entry" id="bibtex-ju2021generalization">
+@inproceedings{ju2021generalization,
+  title={On the generalization power of overfitted two-layer neural tangent kernel models},
+  author={Ju, Peizhong and Lin, Xiaojun and Shroff, Ness},
+  booktitle={International Conference on Machine Learning},
+  pages={5137--5147},
+  year={2021},
+  organization={PMLR}
+}</pre>
+            </li>
+<li>
+              <strong>Peizhong Ju</strong>, Xiaojun Lin, and Jia Liu, "Overfitting Can Be Harmless for Basis
+              Pursuit, But Only to a Degree," accepted as spotlight presentation at <em>34<sup>th</sup>
+                Conference on Neural Information Processing Systems (NeurIPS'20), 2020</em> (acceptance rate: 20%,
+              spotlight presentations: 3%). <span class="badge rounded-pill bg-primary">spotlight</span>
+              <a href="https://arxiv.org/pdf/2002.00492.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-ju2020overfitting">BibTeX</button>
+              <span class="badge bg-transparent border border-danger text-danger">NeurIPS</span>
+              <pre class="bibtex-entry" id="bibtex-ju2020overfitting">
+@article{ju2020overfitting,
+  title={Overfitting can be harmless for basis pursuit, but only to a degree},
+  author={Ju, Peizhong and Lin, Xiaojun and Liu, Jia},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={7956--7967},
+  year={2020}
+}</pre>
+            </li>
+        </ol>
+      </div>
+      <div class="timeline-item">
+        <h3 class="timeline-title">Journal Papers</h3>
+        <ol class="publication-list">
+<li>
+              Muhammad Umair Haider, Hammad Rizwan, Hassan Sajjad, <strong>Peizhong Ju</strong>, and A.B. Siddique,
+              "Neurons Speak in Ranges: Breaking Free from Discrete Neuronal Attribution," <em>Transactions on Machine
+                Learning
+                Research (TMLR)</em>, 2026.
+              <a href="https://arxiv.org/pdf/2502.06809.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-haider2025neurons">BibTeX</button>
+              <pre class="bibtex-entry" id="bibtex-haider2025neurons">
+@article{haider2025neurons,
+  title={Neurons Speak in Ranges: Breaking Free from Discrete Neuronal Attribution},
+  author={Haider, Muhammad Umair and Rizwan, Hammad and Sajjad, Hassan and Ju, Peizhong and Siddique, AB},
+  journal={arXiv preprint arXiv:2502.06809},
+  year={2025}
+}</pre>
+            </li>
+        </ol>
+      </div>
+      <div class="timeline-item">
+        <h3 class="timeline-title">Pending Papers</h3>
+        <ol class="publication-list">
+<li>
+              <strong>Peizhong Ju</strong>, Sen Lin, Mark S. Squillante, Yingbin Liang, and Ness B. Shroff,
+              "Generalization Performance of Transfer Learning: Overparameterized and Underparameterized Regimes."
+              <a href="https://arxiv.org/pdf/2306.04901.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-ju2023generalization">BibTeX</button>
+              <pre class="bibtex-entry" id="bibtex-ju2023generalization">
+@article{ju2023generalization,
+  title={Generalization performance of transfer learning: Overparameterized and underparameterized regimes},
+  author={Ju, Peizhong and Lin, Sen and Squillante, Mark S and Liang, Yingbin and Shroff, Ness B},
+  journal={arXiv preprint arXiv:2306.04901},
+  year={2023}
+}</pre>
+            </li>
+        </ol>
+      </div>
+      <div class="timeline-item">
+        <h3 class="timeline-title">Book Chapters</h3>
+        <ol class="publication-list">
+<li>
+              <strong>Peizhong Ju</strong>, Xiaojun Lin, and Ness B. Shroff, "On the Generalization Power of Overfitted
+              Two-Layer Neural Tangent Kernel Models," Chapter 3 of <em>Artificial Intelligence for Edge Computing</em>,
+              Springer Nature, August 2023. DOI: <a
+                href="http://dx.doi.org/10.1007/978-3-031-40787-1_3">10.1007/978-3-031-40787-1_3</a>
+            </li>
+        </ol>
+      </div>
+      <div class="topic-explore">
+        <h3>Explore Machine Learning</h3>
+        <ul class="topic-links">
+          <li><a href="reinforcement-learning.html">Reinforcement Learning</a></li><li><a href="federated-learning.html">Federated Learning</a></li><li><a href="continual-transfer-learning.html">Continual &amp; Transfer Learning</a></li><li><a href="diffusion-flow-matching.html">Diffusion &amp; Flow Matching</a></li><li><span aria-current="page">Interpretability &amp; Generalization</span></li>
+        </ul>
+        <a href="../index.html#research">← Back to all research topics</a>
+      </div>
+    </section>
+  </main>
+  <script src="../assets/research-topic.js"></script>
+  <script src="../assets/neural-background.js"></script>
+</body>
+</html>

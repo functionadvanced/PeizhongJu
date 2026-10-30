@@ -1,0 +1,130 @@
+{
+  "reinforcement-learning": {
+    "title": "Reinforcement Learning",
+    "intro": "Reinforcement learning studies how an agent learns to make decisions by interacting with an environment and receiving rewards. The goal is to discover a policy that performs well over time, balancing immediate gains with long-term outcomes. My work explores fair decision-making in multi-agent systems, efficient action selection, multi-objective planning, and flow-based policies for learning from offline data.",
+    "publication_groups": [
+      {
+        "category": "Peer-Reviewed Conference Papers",
+        "keys": [
+          "khan2026flowmatchingofflinereinforcement",
+          "soni2026lp",
+          "li2024find",
+          "ju2024achieving",
+          "liachieving"
+        ]
+      },
+      {
+        "category": "Journal Papers",
+        "keys": [
+          "nahim2026survey"
+        ]
+      },
+      {
+        "category": "Pending Papers",
+        "keys": [
+          "khan2026discreteflowmatchingofflineonline"
+        ]
+      }
+    ]
+  },
+  "federated-learning": {
+    "title": "Federated Learning",
+    "intro": "Federated learning lets multiple devices or organizations train a shared model while keeping their raw training data local. Each participant performs local computation and exchanges model information with a coordinating server, making communication and data differences central challenges. My research examines how local updates affect generalization and how federated split learning can train more efficiently.",
+    "publication_groups": [
+      {
+        "category": "Peer-Reviewed Conference Papers",
+        "keys": [
+          "nair2025fsl",
+          "ju2024can"
+        ]
+      }
+    ]
+  },
+  "continual-transfer-learning": {
+    "title": "Continual & Transfer Learning",
+    "intro": "Continual learning helps a model learn new tasks while retaining what it learned before, and transfer learning reuses knowledge from one task to improve another. Both approaches ask when previous experience helps and when it causes interference. My work studies forgetting, rehearsal, source selection, and the generalization of transfer and meta-learning models.",
+    "publication_groups": [
+      {
+        "category": "Peer-Reviewed Conference Papers",
+        "keys": [
+          "deng2025unlocking",
+          "lin2023theory",
+          "jutheoretical"
+        ]
+      },
+      {
+        "category": "Pending Papers",
+        "keys": [
+          "ju2023generalization",
+          "soni2025best"
+        ]
+      }
+    ]
+  },
+  "diffusion-flow-matching": {
+    "title": "Diffusion & Flow Matching",
+    "intro": "Diffusion and flow matching are generative modeling methods that learn to transform a simple starting distribution, such as noise, into structured data. Diffusion models learn to reverse a gradual noising process, while flow matching learns a field that guides samples along a transport path. My research studies sampling guarantees, acceleration, missing data, discrete generation, and applications to reinforcement learning and image restoration.",
+    "publication_groups": [
+      {
+        "category": "Peer-Reviewed Conference Papers",
+        "keys": [
+          "khan2026flowmatchingofflinereinforcement",
+          "liang2024theory",
+          "liang2024broadening"
+        ]
+      },
+      {
+        "category": "Journal Papers",
+        "keys": [
+          "nahim2026survey"
+        ]
+      },
+      {
+        "category": "Pending Papers",
+        "keys": [
+          "khan2026flowmatchingmissingdata",
+          "alqarni2026foasr",
+          "khan2026discreteflowmatchingofflineonline",
+          "khan2026discretemeanflow"
+        ]
+      }
+    ]
+  },
+  "interpretability-generalization": {
+    "title": "Interpretability & Generalization",
+    "intro": "Interpretability asks what a model has learned and how its internal features shape its predictions. Generalization asks how well those predictions extend to data the model has not seen during training, including settings where the model fits its training data exactly. My work connects these questions through studies of neural representations, overfitting, neural tangent kernel models, and the generalization of federated, continual, transfer, and meta-learning.",
+    "publication_groups": [
+      {
+        "category": "Peer-Reviewed Conference Papers",
+        "keys": [
+          "fereidouni2025evaluating",
+          "deng2025unlocking",
+          "ju2024can",
+          "lin2023theory",
+          "jutheoretical",
+          "ju2022generalization",
+          "ju2021generalization",
+          "ju2020overfitting"
+        ]
+      },
+      {
+        "category": "Journal Papers",
+        "keys": [
+          "haider2025neurons"
+        ]
+      },
+      {
+        "category": "Pending Papers",
+        "keys": [
+          "ju2023generalization"
+        ]
+      },
+      {
+        "category": "Book Chapters",
+        "keys": [
+          "10.1007/978-3-031-40787-1_3"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Continual learning helps a model learn new tasks while retaining what it learned before, and transfer learning reuses knowledge from one task to improve another. Both approaches ask when previous experience helps and when it causes interference. My work studies forgetting, rehearsal, source selection, and the generalization of transfer and meta-learning models.">
+  <title>Continual &amp; Transfer Learning | Peizhong Ju</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/research-topic.css">
+</head>
+<body class="topic-page">
+  <nav class="nav flex-column" aria-label="Main navigation">
+    <div class="navbar-brand mb-3 not-nav">
+      <div class="text-center">
+        <span class="ms-2" id="pinyin_name">Peizhong Ju</span><br>
+        <span class="ms-2" id="chinese_name">鞠培中</span>
+      </div>
+    </div>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#honors">Academic Honors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="../index.html#research">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#talks">Invited Talks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#teaching">Teaching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section id="overview" class="topic-overview" aria-labelledby="topic-title">
+      <div class="topic-breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#research">Machine Learning</a></div>
+      <h1 id="topic-title" class="section-title">Continual &amp; Transfer Learning</h1>
+      <hr>
+      <p class="topic-intro">Continual learning helps a model learn new tasks while retaining what it learned before, and transfer learning reuses knowledge from one task to improve another. Both approaches ask when previous experience helps and when it causes interference. My work studies forgetting, rehearsal, source selection, and the generalization of transfer and meta-learning models.</p>
+    </section>
+    <section id="system" aria-labelledby="system-title">
+      <h2 id="system-title" class="research-subsection-title">System Diagram</h2>
+      <figure class="topic-diagram">
+        <img src="../assets/research-diagrams/continual-transfer-learning.svg" alt="Sequential tasks, a shared learner, retained knowledge, and source-to-target adaptation illustrate continual and transfer learning.">
+        <figcaption>A learner adapts as tasks arrive, using retained knowledge and rehearsal to balance new learning with earlier skills. Transfer learning reuses knowledge from a source task to support a target task.</figcaption>
+      </figure>
+    </section>
+    <section id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title" class="research-subsection-title">My publications on this area</h2>
+      <div class="timeline-item">
+        <h3 class="timeline-title">Peer-Reviewed Conference Papers</h3>
+        <ol class="publication-list">
+<li>
+              Junze Deng, Qinhang Wu, <strong>Peizhong Ju</strong>, Sen Lin, Yingbin Liang, and Ness Shroff,
+              "Unlocking the Power of Rehearsal in Continual Learning: A Theoretical Perspective,"
+              <em>42<sup>nd</sup> International Conference on Machine Learning (ICML'25)</em>.
+              <a href="https://arxiv.org/pdf/2506.00205" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-deng2025unlocking">BibTeX</button>
+              <span class="badge bg-transparent border border-primary text-primary">ICML</span>
+              <pre class="bibtex-entry" id="bibtex-deng2025unlocking">
+@inproceedings{deng2025unlocking,
+  title={Unlocking the Power of Rehearsal in Continual Learning: A Theoretical Perspective},
+  author={Deng, Junze and Wu, Qinhang and Ju, Peizhong and Lin, Sen and Liang, Yingbin and Shroff, Ness},
+  booktitle={International Conference on Machine Learning},
+  year={2025},
+  organization={PMLR}
+}
+</pre>
+            </li>
+<li>
+              Sen Lin, <strong>Peizhong Ju (co-first author)</strong>, Yingbin Liang, and Ness B. Shroff, "Theory
+              on Forgetting and Generalization of Continual Learning," <em>40<sup>th</sup> International
+                Conference on Machine Learning (ICML'23), 2023</em>.
+              <a href="https://arxiv.org/pdf/2302.05836.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-lin2023theory">BibTeX</button>
+              <span class="badge bg-transparent border border-primary text-primary">ICML</span>
+              <pre class="bibtex-entry" id="bibtex-lin2023theory">
+@inproceedings{lin2023theory,
+  title={Theory on forgetting and generalization of continual learning},
+  author={Lin, Sen and Ju, Peizhong and Liang, Yingbin and Shroff, Ness},
+  booktitle={International Conference on Machine Learning},
+  pages={21078--21100},
+  year={2023},
+  organization={PMLR}
+}</pre>
+            </li>
+<li>
+              <strong>Peizhong Ju</strong>, Yingbin Liang, and Ness B. Shroff, "Theoretical Characterization of
+              the Generalization Performance of Overfitted Meta-Learning," <em>11<sup>th</sup>
+                International Conference on Learning Representations (ICLR'23), 2023</em>.
+              <a href="https://arxiv.org/pdf/2304.04312.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-jutheoretical">BibTeX</button>
+              <span class="badge bg-transparent border border-success text-success">ICLR</span>
+              <pre class="bibtex-entry" id="bibtex-jutheoretical">
+@inproceedings{jutheoretical,
+  title={Theoretical Characterization of the Generalization Performance of Overfitted Meta-Learning},
+  author={Ju, Peizhong and Liang, Yingbin and Shroff, Ness},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023},
+  url={https://openreview.net/forum?id=Jifob4dSh99}
+}</pre>
+            </li>
+        </ol>
+      </div>
+      <div class="timeline-item">
+        <h3 class="timeline-title">Pending Papers</h3>
+        <ol class="publication-list">
+<li>
+              <strong>Peizhong Ju</strong>, Sen Lin, Mark S. Squillante, Yingbin Liang, and Ness B. Shroff,
+              "Generalization Performance of Transfer Learning: Overparameterized and Underparameterized Regimes."
+              <a href="https://arxiv.org/pdf/2306.04901.pdf" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-ju2023generalization">BibTeX</button>
+              <pre class="bibtex-entry" id="bibtex-ju2023generalization">
+@article{ju2023generalization,
+  title={Generalization performance of transfer learning: Overparameterized and underparameterized regimes},
+  author={Ju, Peizhong and Lin, Sen and Squillante, Mark S and Liang, Yingbin and Shroff, Ness B},
+  journal={arXiv preprint arXiv:2306.04901},
+  year={2023}
+}</pre>
+            </li>
+<li>
+              Ashutosh Soni, <strong>Peizhong Ju</strong>, Atilla Eryilmaz, Ness B. Shroff,
+              "BeST -- A Novel Source Selection Metric for Transfer Learning."
+              <a href="https://arxiv.org/pdf/2501.10933" class="badge rounded-pill bg-secondary">arXiv version</a>
+              <button type="button" class="badge rounded-pill bg-secondary border-0 toggle-bibtex" aria-expanded="false" aria-controls="bibtex-soni2025best">BibTeX</button>
+              <pre class="bibtex-entry" id="bibtex-soni2025best">
+@article{soni2025best,
+  title={BeST--A Novel Source Selection Metric for Transfer Learning},
+  author={Soni, Ashutosh and Ju, Peizhong and Eryilmaz, Atilla and Shroff, Ness B},
+  journal={arXiv preprint arXiv:2501.10933},
+  year={2025}
+}</pre>
+            </li>
+        </ol>
+      </div>
+      <div class="topic-explore">
+        <h3>Explore Machine Learning</h3>
+        <ul class="topic-links">
+          <li><a href="reinforcement-learning.html">Reinforcement Learning</a></li><li><a href="federated-learning.html">Federated Learning</a></li><li><span aria-current="page">Continual &amp; Transfer Learning</span></li><li><a href="diffusion-flow-matching.html">Diffusion &amp; Flow Matching</a></li><li><a href="interpretability-generalization.html">Interpretability &amp; Generalization</a></li>
+        </ul>
+        <a href="../index.html#research">← Back to all research topics</a>
+      </div>
+    </section>
+  </main>
+  <script src="../assets/research-topic.js"></script>
+  <script src="../assets/neural-background.js"></script>
+</body>
+</html>
