@@ -101,6 +101,22 @@ img {
   height: auto;
 }
 
+.contact-share {
+  margin: 24px 0 0;
+}
+
+.contact-share figcaption {
+  margin-bottom: 10px;
+}
+
+.contact-share a {
+  display: inline-block;
+}
+
+.contact-share img {
+  display: block;
+}
+
 .fa {
   font-size: 24px;
   margin-right: 5px;
